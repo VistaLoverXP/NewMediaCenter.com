@@ -43,6 +43,24 @@ body {
   transform: scale(1.05);
 }
 
+.title-container {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.unwanted-border {
+  border: none !important;
+}
+
+.title:focus,
+.title.selected {
+  background-color: darkgreen;
+  outline: 2px solid lightgreen;
+  color: white;
+}
+
+
 #searchbar {
   position: absolute;
   bottom: 20px;
@@ -63,5 +81,6 @@ body {
   border-radius: 5px;
   background: white;
 }
+
 
 
