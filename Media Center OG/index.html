@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XP Media Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+
+    <!-- Selection Box Example -->
+    <div class="selection-box">Videos</div>
+
+    <!-- Bottom Search Bar -->
+    <div id="searchbar">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <!-- Audio -->
+    <audio id="selectSound" src="C:\Users\User\Desktop\Media Center HTML\Assets\Regular (XP) theme\Sounds\Windows XP Media Center Edition 2002-2005 - Windows Vista Media Center Build 5231-5456 Click Sound.wav" preload="auto"></audio>
+  </div>
+
+  <script>
+    // Example: Play sound on selection click
+    document.querySelector('.selection-box').addEventListener('click', () => {
+      document.getElementById('selectSound').play();
+    });
+  </script>
+</body>
+</html>
